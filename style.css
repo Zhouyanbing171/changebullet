@@ -36,6 +36,8 @@ canvas {
     border:5px solid black;
     border-radius: 10px;
     box-shadow: 0 5px 50px #333
+    width: 100vw;
+    height: 56.25vh;
 }
 
 #Cocos3dGameContainer, #GameCanvas {
@@ -43,3 +45,9 @@ canvas {
   height: 100%;
 }
 
+@media (max-width: 600px) {
+    #GameDiv {
+        width: 100%; /* 在小屏幕上占满宽度 */
+        height: auto; /* 高度自动调整 */
+    }
+}
